@@ -1,19 +1,26 @@
-$(document).ready(function(){
-    var allProduct = "https://dummyjson.com/products";
-    getProducts();
 
-    function getProducts(){
-        $.ajax({
-            url: allProduct,
-            method: "GET",
-            data: { limit: 10 },
-            success: function(res){
-                console.log(res);
-            },
-            error: function(err){
-                console.error("Error fetching products:", err);
-            }
-        });
+$(document).ready(function () {
+  $.ajax({
+    url: "https://dummyjson.com/products",
+    method: "GET",
+    data: { limit: 8 },
+    success: function (res) {
+      let html = "";
+      for (let product of res.products) {
+        html += `
+          <div class="col-md-3 mb-4">
+            <div class="card h-100">
+              <img src="${product.thumbnail}" class="card-img-top" alt="${product.title}">
+              <div class="card-body">
+                <h5 class="card-title">${product.title}</h5>
+                <p class="card-text">${product.description.substring(0, 60)}...</p>
+                <a href="#" class="btn btn-primary">Buy Now</a>
+              </div>
+            </div>
+          </div>`;
+      }
+      $("#products").html(html);
     }
+  });
 });
 
