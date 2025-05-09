@@ -1,3 +1,24 @@
+
+/* Enable hover dropdown */
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; /* Optional: remove gap between button and menu */
+}
+
+.dropdown-toggle::after {
+  transition: transform 0.2s;
+}
+
+.dropdown:hover .dropdown-toggle::after {
+  transform: rotate(180deg); /* Optional: animate arrow */
+}
+
 .disabled-link {
     pointer-events: none;  /* Disables interaction (clicking) */
     color: #6c757d;         /* Gray color to indicate it's disabled */
