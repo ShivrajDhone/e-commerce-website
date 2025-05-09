@@ -1,10 +1,11 @@
 <!-- Flipkart Footer -->
-<footer style="background-color: #222; color: #fff; padding: 20px 30px; font-family: Arial, sans-serif; font-size: 16px;" >
+<footer
+  style="background-color: #222; color: #fff; padding: 20px 30px; font-family: Arial, sans-serif; font-size: 16px;">
   <div style="display: flex; flex-wrap: wrap; justify-content: space-between">
 
 
- 
-    
+
+
     <!-- About -->
     <div class="fs-6">
       <h4>ABOUT</h4>
@@ -44,10 +45,10 @@
       <p><a href="#" class="text-decoration-none">Grievance Redressal</a></p>
       <p><a href="#" class="text-decoration-none">EPR Compliance</a></p>
     </div>
-</div>
-</div>
-    <!-- Address -->
-   <div class="d-flex">
+  </div>
+  </div>
+  <!-- Address -->
+  <div class="d-flex">
     <div style="max-width: 300px;">
       <h4>Mail Us:</h4>
       <p>
@@ -72,13 +73,14 @@
         Telephone: <a href="tel:+442079460958 " class="text-decoration-none">+44 20 7946 0958 </a>
       </p>
     </div>
-    </div>
+  </div>
 
-  
-    </div>
+
+  </div>
 
   <!-- Bottom Icons Section -->
-  <div style="border-top: 1px solid #444; margin-top: 40px; padding-top: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+  <div
+    style="border-top: 1px solid #444; margin-top: 40px; padding-top: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
     <div style="display: flex; gap: 20px;">
       <a href="#" class="text-decoration-none">Become a Seller</a>
       <a href="#" class="text-decoration-none">Advertise</a>
@@ -103,4 +105,5 @@
 <script src="js/product.js"></script>
 
 </body>
+
 </html>

@@ -11,12 +11,18 @@ $(document).ready(function () {
           <div class="col-md-3 mb-4">
             <div class="card h-100">
               <img src="${product.thumbnail}" class="card-img-top" alt="${product.title}">
-              <div class="card-body">
+              <div class="card-body mb-2">
                 <h5 class="card-title">${product.title}</h5>
                 <p class="card-text">${product.description.substring(0, 60)}...</p>
-                <a href="#" class="btn btn-primary">Buy Now</a>
-                <a href="#" class="btn btn-primary">$12.00</a>
-              </div>
+                 </div>
+                 <div class="ms-3">
+                  <a href="#" class="btn btn-primary">$ ${product.price}</a>
+                  <h6>Discount: ${product.discountPercentage}%</h6>
+                  <h6>${product.rating} rating</h6>
+                  <h6>${product.stock} Product Left</h6>
+                </div>
+                 
+             
             </div>
           </div>`;
       }
